@@ -7,19 +7,20 @@ angular.module('confusionApp', [])
             this.select = function(setTab) {
                 this.tab = setTab;
 
-                if (setTab === 2)
+                if (setTab === 2){
                     this.filtText = "appetizer";
-                else if (setTab === 3)
+                } else if (setTab === 3){
                     this.filtText = "mains";
-                else if (setTab === 4)
+                }else if (setTab === 4){
                     this.filtText = "dessert";
-                else
+                }else{
                     this.filtText = "";
-            }
+                }
+            };
             
             this.isSelected = function (checkTab) {
                 return (this.tab === checkTab);
-            }
+            };
 
             var dishes=[
                          {
